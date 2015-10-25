@@ -1,0 +1,19 @@
+# ignore all files starting with .
+.*
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+!.gitkeep
+!.env.example
+
+# ignore composer.lock
+composer.lock
+
+# ignore some web directories
+web/wp/
+web/app/plugins
+web/app/mu-plugins/
+web/uploads/
+
+# ignore env library
+phpdotenv
