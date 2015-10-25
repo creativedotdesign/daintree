@@ -1,2 +1,2 @@
-# daintree
-Experimental WordPress boilerplate.
+# Daintree
+An experimental WordPress boilerplate.
