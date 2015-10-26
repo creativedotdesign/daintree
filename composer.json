@@ -6,12 +6,17 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
+    },
+    {
+      "type": "git",
+      "url": "git@github.com:lambdacreatives/tofino.git"
     }
   ],
   "require": {
     "johnpbloch/wordpress": "4.3.1",
     "mnsami/composer-custom-directory-installer": "1.0.*",
-    "vlucas/phpdotenv": "~2.0"
+    "vlucas/phpdotenv": "~2.0",
+    "lambdacreatives/tofino": "dev-master"
   },
   "extra": {
     "wordpress-install-dir": "./web/wp",
@@ -22,7 +27,8 @@
       "./web/app/themes/{$name}": [
         "type:wordpress-theme"
       ]
-      "./phpdotenv/": ["vlucas/phpdotenv"]
+      "./phpdotenv/": ["vlucas/phpdotenv"],
+      "./web/app/themes/tofino": ["lambdacreatives/tofino"]
     }
   },
   "config": {
