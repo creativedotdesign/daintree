@@ -1,6 +1,24 @@
 {
   "name": "lambdacreatives/daintree",
   "description": "An experimental WordPress boilerplate.",
+  "homepage": "https://github.com/lambdacreatives/daintree",
+  "authors": [
+    {
+      "name": "Daniel Hewes",
+      "email": "daniel@lambdacreatives.com",
+      "homepage": "https://github.com/danimalweb"
+    },
+    {
+      "name": "Jake Gully",
+      "email": "chimpytk@gmail.com",
+      "homepage": "https://github.com/mrchimp"
+    }
+  ],
+  "keywords": [
+    "WordPress",
+    "boilerplate",
+    "installer"
+  ],
   "license": "MIT",
   "repositories": [
     {
