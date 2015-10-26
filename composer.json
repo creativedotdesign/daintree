@@ -28,8 +28,7 @@
       "./web/app/themes/{$name}": [
         "type:wordpress-theme"
       ],
-      "./phpdotenv/": ["vlucas/phpdotenv"],
-      "./web/app/themes/tofino": ["lambdacreatives/tofino"]
+      "./phpdotenv/": ["vlucas/phpdotenv"]
     }
   },
   "config": {
