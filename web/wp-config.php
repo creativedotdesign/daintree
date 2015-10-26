@@ -6,7 +6,15 @@ require __DIR__ . '/../phpdotenv/src/Validator.php';
 
 $dotenv = new Dotenv\Dotenv( dirname( __DIR__ ) );
 $dotenv->load();
-$dotenv->required( array( 'DB_NAME', 'DB_USER', 'DB_PASSWORD', 'DB_HOST', 'WP_ENV', 'WP_HOME', 'WP_SITEURL' ) );
+$dotenv->required( array(
+  'DB_NAME',
+  'DB_USER',
+  'DB_PASSWORD',
+  'DB_HOST',
+  'WP_ENV',
+  'WP_HOME',
+  'WP_SITEURL'
+) );
 
 
 // ** MySQL settings ** //
