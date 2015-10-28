@@ -35,7 +35,7 @@
     "johnpbloch/wordpress": "4.3.1",
     "mnsami/composer-custom-directory-installer": "1.0.*",
     "vlucas/phpdotenv": "~2.0",
-    "lambdacreatives/tofino": "dev-master"
+    "lambdacreatives/tofino": "dev-daintree"
   },
   "extra": {
     "wordpress-install-dir": "./web/wp",
