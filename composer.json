@@ -26,8 +26,8 @@
       "url": "http://wpackagist.org"
     },
     {
-      "type": "git",
-      "url": "git@github.com:lambdacreatives/tofino.git"
+      "type": "vcs",
+      "url": "https://github.com/lambdacreatives/tofino"
     }
   ],
   "require": {
