@@ -11,6 +11,7 @@ composer.lock
 
 # ignore some web directories
 web/wp/
+web/app/themes
 web/app/plugins
 web/app/mu-plugins/
 web/uploads/
