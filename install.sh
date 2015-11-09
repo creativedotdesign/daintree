@@ -60,7 +60,7 @@ fi
 # Check wp-cli dotenv command
 target_dir="~/.wp-cli"
 if [ ! -d $target_dir ]; then
-	error "wp-cli in home directory is does not exist."
+	error "wp-cli in home directory does not exist."
   echo
 	#exit 1
 fi
