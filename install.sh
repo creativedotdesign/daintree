@@ -128,8 +128,10 @@ else
 	fi
 fi
 
-#Get the home URL for the installer
-URL="$(wp dotenv get WP_HOME)"
+#Get the site URL for the installer
+URL="$(wp dotenv get WP_SITEURL)"
+echo URL
+echo
 
 wp core install --url="${URL}" --title="${sitename}" --admin_user="${wpuser}" --admin_password="{$pass}" --admin_email="${admin_email}"
 
