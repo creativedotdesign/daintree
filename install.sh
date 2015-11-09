@@ -62,7 +62,7 @@ target_dir="~/.wp-cli"
 if [ ! -d $target_dir ]; then
 	error "wp-cli in home directory does not exist."
   echo
-	#exit 1
+	exit 1
 fi
 
 echo
