@@ -24,18 +24,13 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
-    },
-    {
-      "type": "vcs",
-      "url": "https://github.com/lambdacreatives/tofino"
     }
   ],
   "require": {
     "php": ">=5.5",
     "johnpbloch/wordpress": "4.3.1",
     "mnsami/composer-custom-directory-installer": "1.0.*",
-    "vlucas/phpdotenv": "~2.0",
-    "lambdacreatives/tofino": "dev-daintree"
+    "vlucas/phpdotenv": "~2.0"
   },
   "extra": {
     "wordpress-install-dir": "./web/wp",
