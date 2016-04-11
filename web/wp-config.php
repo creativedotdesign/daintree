@@ -1,8 +1,6 @@
 <?php
 
-require __DIR__ . '/../phpdotenv/src/Dotenv.php';
-require __DIR__ . '/../phpdotenv/src/Loader.php';
-require __DIR__ . '/../phpdotenv/src/Validator.php';
+require_once(dirname(__DIR__) . '/vendor/autoload.php');
 
 $dotenv = new Dotenv\Dotenv(dirname( __DIR__ ));
 $dotenv->load();
