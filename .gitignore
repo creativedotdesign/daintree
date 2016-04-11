@@ -6,9 +6,6 @@
 !.gitkeep
 !.env.example
 
-# ignore composer.lock
-composer.lock
-
 # ignore some web directories
 web/wp
 web/app/themes
