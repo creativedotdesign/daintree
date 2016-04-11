@@ -10,11 +10,9 @@
 composer.lock
 
 # ignore some web directories
-web/wp/
+web/wp
 web/app/themes
 web/app/plugins
-web/app/mu-plugins/
-web/uploads/
-
-# ignore env library
-phpdotenv
+web/app/mu-plugins
+web/uploads
+vendor
