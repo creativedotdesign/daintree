@@ -60,9 +60,9 @@ fi
 # Check wp-cli dotenv command
 target_dir="~/.wp-cli"
 if [ ! -d $target_dir ]; then
-	error "wp-cli in home directory does not exist."
+	error ".wp-cli in home directory does not exist."
   echo
-	exit 1
+	#exit 1
 fi
 
 echo
@@ -107,7 +107,7 @@ if [[ -z "$pass" ]]
 	then
   echo "Generating a random password..."
 	# generate random 12 character password
-	pass=$(LC_CTYPE=C tr -dc A-Za-z0-9_\!\@\#\$\%\^\&\*\(\)-+= < /dev/urandom | head -c 12)
+	pass=$(LC_CTYPE=C tr -dc A-Za-z0-9_\!\@\$\%\^\&\*\(\)-+= < /dev/urandom | head -c 12)
 	echo "Admin Password is: ${pass}"
 fi
 hr
@@ -130,10 +130,10 @@ fi
 
 #Get the site URL for the installer
 URL="$(wp dotenv get WP_SITEURL)"
-echo URL
+echo ${URL}
 echo
 
-wp core install --url="${URL}" --title="${sitename}" --admin_user="${wpuser}" --admin_password="{$pass}" --admin_email="${admin_email}"
+wp core install --url="${URL}" --title="${sitename}" --admin_user="${wpuser}" --admin_password="${pass}" --admin_email="${admin_email}" --debug
 
 title "Blocking search engines..."
 echo
@@ -184,7 +184,7 @@ echo
 title "Website: "
 echo $URL
 title "Admin: "
-echo $URL"/wp/wp-admin"
+echo $URL"/wp-admin"
 title "Username: "
 echo "$wpuser"
 title "Password: "

@@ -48,9 +48,9 @@ define('NONCE_SALT',       $_ENV['NONCE_SALT']);
 $table_prefix = 'wp_';
 
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/app' );
-define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/app' );
+define( 'WP_CONTENT_URL', 'http://' . $_ENV['WP_SITEURL'] . '/app' );
 define( 'WPMU_PLUGIN_DIR', dirname( __FILE__ ) . '/app/mu-plugins' );
-define( 'WPMU_PLUGIN_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/app/mu-plugins' );
+define( 'WPMU_PLUGIN_URL', 'http://' . $_ENV['WP_SITEURL'] . '/app/mu-plugins' );
 
 define( 'WP_HOME', $_ENV['WP_HOME'] );
 define( 'WP_SITEURL', $_ENV['WP_SITEURL'] );
