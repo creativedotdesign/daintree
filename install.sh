@@ -171,11 +171,6 @@ wp rewrite structure '/%postname%/'
 wp rewrite flush
 echo
 
-# delete hello dolly
-title "Deleting hello dolly plugin..."
-echo
-wp plugin delete hello
-
 hr
 
 title "Installation is complete. :)"
