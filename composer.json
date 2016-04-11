@@ -36,12 +36,8 @@
   "extra": {
     "wordpress-install-dir": "./web/wp",
     "installer-paths": {
-      "./web/app/plugins/{$name}/": [
-        "type:wordpress-plugin"
-      ],
-      "./web/app/themes/{$name}": [
-        "type:wordpress-theme"
-      ],
+      "./web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "./web/app/themes/{$name}": ["type:wordpress-theme"],
       "./phpdotenv/": ["vlucas/phpdotenv"]
     }
   },
