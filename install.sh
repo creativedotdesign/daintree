@@ -38,6 +38,28 @@ function question {
 	echo "${yellow}$1${clear}"
 }
 
+function bitbucket {
+	title "Bitbucket git repository helper"
+	echo "Create a new git repo on your BitBucket account."
+
+	echo 'Your Bitbucket username:'
+	read username
+
+	echo 'Your Bitbucket password:'
+	read -s password  # -s flag hides password text
+
+	echo 'Your Bitbucket repository name:'
+	read repo_name
+
+	echo 'Your Bitbucket team:'
+	read repo_name
+
+	curl --user $username:$password https://api.bitbucket.org/2.0/repositories/ --data name=$repo_name --data is_private='true' --data owner=$team
+	git remote add origin git@bitbucket.org:$username/$reponame.git
+	git push -u origin --all
+	git push -u origin --tags
+}
+
 clear
 hr
 echo "WordPress Install Script"
@@ -182,3 +204,5 @@ title "Username: "
 echo "$wpuser"
 title "Password: "
 echo "$pass"
+
+bitbucket
